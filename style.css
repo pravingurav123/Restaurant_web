@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+   
+
+    font-family: Urbanist, sans-serif;
+    color: #444;
+    font-size: 20px;
+    line-height: 170%;
+
+
+}
+
+.header{
+    background: url(./image/bg.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:991px){
+    .sidebar{
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: flur(10px);
+    }
+ 
+}
+
+.logo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chartreuse;
+    font-style: italic;
+    font-stretch:wider;
+}
+.offcanvas-title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chartreuse;
+    font-style: italic;
+    font-stretch:wider;
+}
+
+h4{
+   
+    font-weight: bold;
+    font-style: italic;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-block {
+  
+    text-align: center;
+}
+
+
+    .service-image {
+        margin-bottom: 25px;
+    }
+ 
+.cont{
+   background-color: aquamarine;
+}
+
+ .owners{
+    background-color: rgb(61, 54, 54);
+  
+ }  
+ 
+ .footer{
+    background-color: blanchedalmond;
+ }
+
+
+
+
+li a:hover{
+	cursor: pointer;
+    text-decoration:underline;
+    color: rgb(0, 160, 0);
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 5px;
+}
+.cream-bg{
+    background-color: antiquewhite;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+
+/* Sign Up page Css*/
+.sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(173,100,115,0.8436624649859944) 100%);
+   
+}
+.containersign{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: 0 15px 20px #ABB2B9;
+    background: #fce9e9;
+    border-radius: 10px;
+ 
+
+
+}
+.signh2{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    color: #2f4f4f;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label,.gender-title{
+    width: 95%;
+  color: #2f4f4f;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.gender-title{
+    font-size: 20px;
+}
+.input-box input{
+    height: 40px;
+    width: 90%;
+    padding: 0 10px;
+    border-radius:5px ;
+    border: 1px solid #ccc;
+    outline: none;
+    /* font-family: cursive; */
+}
+.input-box input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+    font-size: 20px;
+}
+.gender-category label, .gender-category input{
+    cursor: pointer;
+    
+}
+.button-container{
+    margin: 15px 0;
+}
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+   border: none;
+    border-radius: 5px;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(173,100,115,0.8436624649859944) 100%);
+   
+}
+.button-container button:hover{
+    background-color: rgb(22, 187, 33);
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    .containersign{
+        min-width: 280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}

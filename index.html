@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Restaurant</title>
+</head>
+
+<body>
+  <header class="header ">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top  ">
+          <div class="container-fluid ">
+            <a class="navbar-brand fs-4" href="#">
+              <h1 class="logo">Restaurant</h1>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <!-- sidebar header -->
+              <div class="offcanvas-header text-white border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Restaurant</h5>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <!-- sidebar body -->
+              <div class="offcanvas-body flex-lg-row p-lg-0 ">
+                <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <!-- Login SignUp -->
+                <div class="d-flex flex-lg-row flex-coloumn py-4 justify-content-center align-items-center gap-5">
+                  <a href="login.html" class="text-white text-decoration-none px-3 py-1 rounded-4"
+                    style="background-color: green;">Login</a>
+                  <a href="signup.html" class="text-white text-decoration-none px-3 py-1 rounded-4"
+                    style="background-color: blue;">SignUp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <section class="carousel  pt-5 mt-5">
+          <div id="carouselExampleCaptions" class="carousel slide  mt-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="./image/lasagna-5994612_1920.jpg" height="550px" width="200px" class="d-block w-100"
+                  alt="...">
+             
+              </div>
+              <div class="carousel-item">
+                <img src="./image/pizza-3007395_1280.jpg" height="550px" width="200px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/food-4773380_1280.jpg" height="550px" width="200px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+             
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <section id="sec" class=" ">
+      <div class="container  ">
+        <div class="row pt-5">
+          <div class="col-lg-6">
+            <h1 class="pt-2 display-1 text-primary">About Us </h1>
+            <p class="py-3 text-white"> Welcome to Restaurant, where culinary excellence meets warm
+              hospitality. Our story is one of passion, dedication, and a commitment to delivering an exceptional dining
+              experience to our cherished guests.
+              Our Journey
+
+              At  Restaurant , our journey began with a simple yet profound vision – to create a haven for
+              food
+              enthusiasts, a place where flavors come alive, and memories are made. Established in 2000, we embarked on this culinary adventure with the aim of offering a unique blend of
+              delectable
+              cuisine, inviting ambiance, and impeccable service.
+              Our Philosophy
+              Culinary Excellence</p>
+            <button class="btn btn-outline-primary mb-5  "> Read More</button>
+          </div>
+          <div class="col-lg-6 py-5 py-lg-0 ">
+            <img src="./image/restaurant-1284351_1920.jpg" class="img-fluid img-thumbnail mx-auto d-block rounded-3"
+              alt="">
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+  </header>
+  <section class=" cont ">
+    <div class="container">
+
+      <div class="row py-md-5 justify-content-center  pt-sm-5 ">
+        <div class="col-md-4 service-block">
+
+          <img
+            src="https://uploads-ssl.webflow.com/6236be9ba964064c0ce400f8/6247f8589cd00292a118f540_quality%20food.svg"
+            class="pb-4 ">
+          <h4>Quality Food</h4>
+          <p>Your diet is a bank account. Good food choices are good investments.
+            Food is for eating, and good food is to be enjoyed... I think food is, actually, very beautiful in itself..</p>
+
+        </div>
+        <div class=" col-md-4 service-block">
+          <img
+            src="https://uploads-ssl.webflow.com/6236be9ba964064c0ce400f8/6247f93205d4f44beee3d81c_Super%20Taste.svg" class="pb-4">
+          <h4>Super Taste</h4>
+          <p>food is not just eating a energy. its and experience Food is love, and dinner is the ultimate date.
+            Feast your eyes on this delicious dinner spread.</p>
+        </div>
+
+        <div class=" col-md-4 service-block">
+          <img
+            src="https://uploads-ssl.webflow.com/6236be9ba964064c0ce400f8/6247f93cfe9d3c2aa4fffcf5_Fast%20Delivery.svg" class="pb-4">
+          <h4>Fast Delivery</h4>
+          <p>Delivering happiness and
+            Fall in love with our service
+            Promised quality service
+            Your package in our safe hands
+            True to service
+            Hassle-free delivery with usAlways on time.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <h1 class="text-center pt-5">Popular Dishes</h1>
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="card mt-3 h-100" style="width:18rem;">
+          <img src="/image/vegetable-pakora.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">PAKORA</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="./image/bombay-potatoes.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold"> BOMBAY POTATOES</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="./image/vegetable-jalfrezi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">vegetable jalfrezi</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="./image/malai-kofta.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title  fw-bold text-uppercase">malai kofta</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="/image/falafel.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">falafel</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="./image/raita-recipe.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">raita recipe</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="./image/coconut-milk-rice.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">coconut milk rice</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+
+        <div class="card mt-3 h-100" style="width: 18rem;">
+          <img src="./image/dal-soup.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase"> dal soup</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">ORDER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="owners mt-3">
+    <div class="container ">
+      <h1 class=" title-block display-2 text-center py-5  text-info">OUR TEAM</h1>
+
+      <div class="d-flex flex-wrap justify-content-around align-items-center text-center">
+      <div style="width: 15rem;" class=" col-12 col-md-12">
+        <img src="/image/Rony.jpg" alt="not found" class="img-fluid service-block rounded-circle" ">
+        <h4 class="pt-3 text-white">RONY</h2>
+        <p class="text-primary">Founder & Head Chef</p>
+      </div>
+    
+      <div style="width: 15rem;">
+        <img src="/image/Harry.jpg" alt="not found" class="img-fluid service-block rounded-circle"">
+          <h4 class="pt-3 text-white" >HARRY</h2>
+          <p class=" text-primary">Sous Chef </p>
+      </div>
+      
+      <div  style="width: 15rem;">
+        <img src="/image/Adum.jpg" alt="not found" class="img-fluid service-block rounded-circle" >
+          <h4 class="pt-3 text-white"> ADUM</h2>
+          <p class=" text-primary"> Line Cooks</p>
+      </div>
+      
+
+         
+      </div>
+    </div>
+  </section>
+
+<footer class="bg-dark text-white  pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-info"> Hours</h5>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident id, nihil consequatur quis doloremque possimus vitae fugit. Amet voluptatum reprehenderit quia autem nisi, nostrum voluptas eveniet, laborum nulla voluptatem quae.</p>
+      -->
+      <ul  class="list-unstyled">
+        <li >
+          Sunday – Wednesday
+          <br>
+          Dinner 5 pm – 10 pm
+        </li>
+        <br>
+        <li>
+           Thursday – Saturday
+          <br>
+          Dinner 5 pm – 11 pm
+        </li>
+        br
+        <li>
+
+          Weekday Lunch
+          <br>
+          Tue – Fri, 12 pm – 4 pm
+        </li>
+        <br>
+        <li>
+          Weekend Brunch
+          <br>
+              Sat & Sun, 10 am – 3 pm
+        </li>
+      </ul>
+    
+    </div> 
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-info">Useful Links</h5>
+        <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> <a href="index.html" class="text-decoration-none text-white">Home</a>
+        </p>
+
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;"> <a href="About.html" class="text-decoration-none text-white">About</a></a>
+      </p>
+      <p>
+        <a href="#" class="text-white" style="text-decoration: none;"> <a href="#" class="text-decoration-none text-white">Help</a></a>
+    </p>
+    <p>
+      <a href="#" class="text-white" style="text-decoration: none;"> <a href="contact.html" class="text-decoration-none text-white">Contact</a>
+  </p>
+      </div>
+
+      
+
+      <div class=" col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class=" text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+        <p class="">
+          <i class="fas fa-home mr-3"></i> CNC,NERUL INDIA
+        </p>
+
+        <p class="">
+          <i class="fas fa-envelope mr-3"></i> pravin@gmail.com
+        </p>
+        <p class="">
+          <i class="fas fa-phone mr-3"></i> 9636524525
+        </p>
+
+        <p class="">
+          <i class="fas fa-print mr-3"></i> +01 22222222
+        </p>
+      </div>
+    </div>
+
+
+    
+    <hr class="mb-4">
+    <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8 ">
+            <p>
+              Copyright@2023 All rights reserved by:
+              <a href="#" style="text-decoration: none ;">
+              <strong class="text-uppercase" style="color: blueviolet;"> Restaurant</strong></a>
+            </p>
+
+
+        </div>
+        <div class="col-md-5 col-lg-4 ">
+            <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline ">
+                  <li class="list-inline-item p-3 ">
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                  </li>
+
+                  <li class="list-inline-item p-3">
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item p-3">
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item p-3">
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</footer>
+
+
+
+ 
+
+</body>
+
+</html>
